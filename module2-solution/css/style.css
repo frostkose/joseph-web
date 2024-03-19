@@ -1,5 +1,6 @@
 body{
 background-color:khaki;
+
 }
 /*h1 {
 color:blue;
@@ -39,8 +40,7 @@ p{
   box-sizing: border-box;
   }
   
-  
-  
+ 
 
 h1 {
   margin-bottom: 15px;
@@ -73,42 +73,49 @@ background-color: yellow;
 #spaghetti>h3{
 background-color:whitesmoke ;
 }
+#tacos{
+margin-left: 0px;
+margin-right: 0px;
+}
+.row{
+/*width:100%;*/
+/*border:solid black 5px;*/
+/*align-content: center;*/
+/*overflow: hidden;*/
+display: flex;
+/*position: relative;*/
+overflow: hidden;
 
-title{
-color:orange;
 }
 
+
 #pizza,#tacos,#spaghetti {
-  width:100%;
-  height: 100%;
   border: 1px solid black;
   background-color: #A52A2A;
-  margin:5%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   color: white;
   padding: 20px;
   position:relative;
+  margin-inline: 1%;
+
+  
+  /*display: flex;*/
+
 }
-#pizza{
-margin-left:0px;
-/*margin-right:0px;*/
-}
-#spaghetti{
-margin-right: 0px;
-}
+
 
   
 
 /********** desktop only **********/
-@media (min-width: 992px) {
+@media (min-width: 992px) {/*
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;}
+    float: left;}*/
     #pizza,#tacos,#spaghetti{
 float:left;
-width:26%;
-    
+width:33.33%;
+
     }
-  }
+  /*
   .col-lg-1 {
     width: 8.33%;
   }
@@ -144,25 +151,32 @@ width:26%;
   }
   .col-lg-12 {
     width: 100%;
-  }
+  }*/
 }
 
 /********** tablet only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {/*
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
     
-  }
+  }*/
   #pizza,#tacos,#spaghetti{
-  	float:left}
+  	float:left;
+
+  }
+
+  .row{
+
+display:flow;
+  }
   #pizza,#tacos {
-    width: 50%;
+    width: 48%;
   }/*
   .col-md-2 {
     width: 16.66%;
   }*/
  #spaghetti {
-    width: 100%;
+    width: 98%;
   }/*
   .col-md-4 {
     width: 33.33%;
@@ -193,11 +207,19 @@ width:26%;
   }*/
 }
 /*********phones only********/
-@media (max-width: 767px) {
+@media (max-width: 767px) {/*
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
     
+  }*/
+.row{
+
+display:flow;
   }
+#pizza,#tacos,#spaghetti{
+    width:99%}
+  /*
+
   .col-sm-1 {
     width: 8.33%;
   }
@@ -233,6 +255,6 @@ width:26%;
   }
   .col-sm-12 {
     width: 100%;
-  }
+  }*/
 }
 
